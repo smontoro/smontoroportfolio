@@ -1,0 +1,339 @@
+
+/* primary color: #F05F40;
+ secondary color: #669377;
+ */
+
+/** BASE STYLES 
+==================================================================== **/
+ body, html {
+     width: 100%;
+     height: 100%;
+}
+}
+ body {
+     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+ hr {
+     max-width: 50px;
+     border-width: 3px;
+     border-color: #F05F40;
+}
+ hr.light {
+     border-color: #fff;
+}
+ a {
+     color: #F05F40;
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     transition: all 0.2s;
+}
+
+ a:hover {
+     color: #f05f40;
+     text-decoration: none;
+}
+ h1, h2, h3, h4, h5, h6 {
+     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+ .bg-primary {
+     background-color: #F05F40 !important;
+}
+
+ .text-faded {
+     color: rgba(255, 255, 255, 0.7);
+}
+ section {
+     padding: 8rem 0;
+}
+ .section-heading {
+     margin-top: 0;
+}
+ ::-moz-selection {
+     color: #fff;
+     background: #212529;
+     text-shadow: none;
+}
+ ::selection {
+     color: #fff;
+     background: #212529;
+     text-shadow: none;
+}
+ img::selection {
+     color: #fff;
+     background: transparent;
+}
+ img::-moz-selection {
+     color: #fff;
+     background: transparent;
+}
+ body {
+     -webkit-tap-highlight-color: #212529;
+}
+
+ .btn {
+     font-weight: 700;
+     text-transform: uppercase;
+     border: none;
+     border-radius: 300px;
+     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+ .btn-xl {
+     padding: 1rem 2rem;
+}
+ .btn-primary {
+     background-color: #669377;
+     border-color: #669377;
+}
+ .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+     color: #fff;
+     background-color: #86a892 !important;
+     border: #669377 !important;
+}
+ .btn-primary:active, .btn-primary:focus {
+     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+/** XS+ DEVICE STYLES
+==================================================================== **/
+
+/** NAV 
+----------------------------- **/
+ #mainNav {
+     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+     background-color: #fff;
+     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     transition: all 0.2s;
+}
+ #mainNav .navbar-brand {
+    font-size: 20px;
+     text-transform: uppercase;
+     color: #F05F40;
+     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+ #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+     color: #f05f40;
+}
+ #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    font-size: 20px;
+    font-weight: 700;
+     text-transform: uppercase;
+     color: #343a40;
+}
+ #mainNav .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+     color: #F05F40;
+}
+ #mainNav .navbar-nav > li.nav-item > a.nav-link.active, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+     color: #F05F40 !important;
+     background-color: transparent;
+}
+ #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+     background-color: transparent;
+}
+
+/** HEADER
+------------------------------ **/
+.bg {
+     background: linear-gradient(to bottom left, grey, transparent), url("../img/hero.jpg") no-repeat;
+     background-size: cover;
+    }
+header.masthead h1 {
+    font-size: 4rem;
+    padding-top: 75px;
+    padding-bottom: 0;
+}
+header, header p {
+    color: #fff;
+}
+.fa-linkedin-square, .fa-github-alt {
+    color: #F05F40;
+}
+ header.masthead hr {
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+ header.masthead p {
+     font-weight: 300;
+     font-size: 20px;
+}
+ .header-text {
+     margin-top: 25%;
+     padding-bottom: 50px;
+     padding-top: -50px;
+}
+
+/** ABOUT
+------------------------------ **/
+.headshot {
+    width: 65%;
+}
+
+/** SERVICES 
+-------------------------------- **/
+ .service-box {
+     max-width: 400px;
+}
+
+ .text-primary {
+     color: #F05F40 !important;
+}
+
+/** PORTFOLIO 
+-------------------------------- **/
+#portfolio {
+     padding: 50px 0 100px !important;
+     background-color: #CADBD9;
+}
+
+.portfolio-box {
+     position: relative;
+     display: block;
+     max-width: 650px;
+     margin: 0 auto;
+}
+
+
+.portfolio-box .portfolio-box-caption {
+     position: absolute;
+     bottom: 0;
+     display: block;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     opacity: 0;
+     color: #fff;
+     background: rgba(240, 95, 64, 0.9);
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     transform: translateY(-50%);
+     text-align: center;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+     opacity: 1;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+     padding: 0 15px;
+     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+     font-size: 22px;
+}
+
+
+/*MODAL*/
+.modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     padding-top: 100px;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+}
+
+.modal a {
+    font-size: 14px;
+}
+
+.modal-content {
+     background-color: #fff;
+     margin: auto;
+     padding: 50px;
+     border: 1px solid #888;
+     width: 85%;
+     text-align: center;
+}
+
+
+
+
+
+
+/** QUERIES FOR DESKTOPS +
+==================================================================== **/
+@media (min-width: 992px) {
+
+    /** NAV
+    ----------------------------- **/
+     #mainNav {
+         border-color: transparent;
+         background-color: #F05F40;
+    }
+     #mainNav .navbar-brand {
+         color: rgba(255, 255, 255, 0.7);
+    }
+     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+         color: #fff;
+    }
+     #mainNav .navbar-nav > li.nav-item > a.nav-link {
+         padding: 0.5rem 1.5rem;
+    }
+     #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+         color: rgba(255, 255, 255, 0.7);
+    }
+     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+         color: #fff;
+    }
+     #mainNav.navbar-shrink {
+         border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+         background-color: #fff;
+    }
+     #mainNav.navbar-shrink .navbar-brand {
+         color: #F05F40;
+    }
+     #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+         color: #f05f40;
+    }
+     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link, #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+         color: #212529;
+    }
+     #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+         color: #F05F40;
+    }
+
+    /** HEADER
+    ---------------------------- **/
+    .bg {
+        background: linear-gradient(to left, oldlace, transparent), url("../img/hero.jpg") no-repeat center;
+        background-size: cover;
+        box-shadow: 0px 10px 20px -5px rgba(0,0,0,.8); 
+        height: 100%;
+    }
+    header, header p {
+        color: #212529;
+    }
+    header.masthead h1 {
+        padding-top: 0;
+    }
+     .headshot {
+     width: 33%;
+    }
+
+    /*MODAL*/
+    .modal-content {
+         width: 50%;
+         text-align: center;
+    }
+    .modal a {
+    font-size: 1rem;
+}
+
+}
